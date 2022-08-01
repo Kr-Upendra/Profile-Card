@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@600&family=Poppins:wght@300;400;600;700&display=swap');
+:root {
+  --bodyColor: #2C3639;
+  --cardColor: #1B2430;
+  --footerColor: #100f0f5e;
+  --headingColor: #EDEDED;
+  --textColor: #d8e3e7cc;
+  --companyColor: #E94560;
+  --btnColor: #332FD0;
+  --textFont: 'Poppins', sans-serif;
+  --headingFont: 'Fira Code', monospace;
+  --borderColor: #f2b8fa25;
+  --border: 1px solid red;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--textFont);
+  background-color: var(--bodyColor);
+}
+
+.links {
+  width: 25px;
+  filter: invert(90%);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 20px;
+  font-weight: 700;
+  font-family: var(--headingFont);
+  color: var(--headingColor);
+}
+
+p {
+  font-family: var(--textFont);
+  font-size: 13.5px;
+  color: var(--textColor);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 5% 0;
+}
+
+.card {
+  width: 300px;
+  border-radius: 4px;
+  box-shadow: 10px 15px 15px 10px rgba(255, 255, 255, .01);
+  background-color: var(--cardColor);
+}
+
+.person {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.person__img {
+  border-radius: 4px;
+  width: 100%;
+  margin-bottom: .3rem;
+  height: 230px;
+}
+
+.person__name {
+  letter-spacing: -.02em;
+}
+
+.person__business {
+  color: var(--companyColor);
+  margin: .2rem 0;
+}
+
+.person__contact {
+  padding: 4px 10px;
+  background-color: var(--btnColor);
+  color: var(--textColor);
+  text-decoration: none;
+  margin: 0 30px;
+  border-radius: 5px;
+  color: var(--headingColor);
+  font-size: 15px;
+}
+
+.person__email {
+  background-color: var(--headingColor);
+  color: var(--cardColor);
+}
+.person__email img {
+  filter: none;
+}
+
+.person__links {
+  margin: 10px 0;
+  margin-bottom: -2.5px;
+  width: 15px;
+}
+
+
+.about, .interest {
+  padding: 0 30px;
+}
+
+.heading {
+  margin: .5rem 0;
+  border-bottom: 2px solid var(--borderColor);
+}
+
+.footer {
+  padding: 10px ;
+  background-color: var(--footerColor);
+  margin-top: .5rem;
+  text-align: center;
+}
+
+.footer__links {
+  margin: 0 15px;
+}
